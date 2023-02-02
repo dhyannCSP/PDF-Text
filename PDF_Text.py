@@ -1,3 +1,7 @@
+#Name: Dhyan Narayanan #113
+#Date: 01/24/23
+#Takes a PDF and converts all the text
+
 import tkinter as tk
 import PyPDF2
 from PIL import Image, ImageTk
@@ -6,6 +10,7 @@ import os
 
 root = tk.Tk()
 
+#Creates a window
 canvas = tk.Canvas(root, width=600, height=300)
 canvas.grid(columnspan=3, rowspan=3)
 
@@ -20,6 +25,7 @@ logo_label.grid(column=1, row=0)
 instructions = tk.Label(root, text="Select a PDF file on your computer to extract all its text", font="Raleway")
 instructions.grid(columnspan=3, column=0, row=1)
 
+#Brwose for file feature
 def open_file():
     browse_text.set("loading...")
     file = askopenfile(parent=root, mode='rb', title="Choose a file", filetypes=[("Pdf file", "*.pdf")])
