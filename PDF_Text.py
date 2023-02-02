@@ -10,7 +10,7 @@ canvas = tk.Canvas(root, width=600, height=300)
 canvas.grid(columnspan=3, rowspan=3)
 
 #logo
-logo = Image.open(os.path.join(r'C:\Users\juicy\Documents\VS Code\tkinter_project\Img\logo.png'))
+logo = Image.open('logo.png')
 logo = ImageTk.PhotoImage(logo)
 logo_label = tk.Label(image=logo)
 logo_label.image = logo
