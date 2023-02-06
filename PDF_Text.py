@@ -1,3 +1,8 @@
+#Name: Dhyan Narayanan #113
+#Date: 02/03/23
+#Takes in PDF doc and if it goes through and works then the background changes to green and there is a character counter for the PDF document 
+
+
 import tkinter as tk
 import PyPDF2
 from PIL import Image, ImageTk
